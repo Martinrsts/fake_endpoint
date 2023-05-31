@@ -22,14 +22,16 @@ def create_json():
         purchase_prices_uf.append({"x": int(x / 30000)}) # Assuming 1 UF = 30,000 CLP
 
     data = {
-        "rental_price_clp": rental_price_clp,
-        # "purchase_price_clp": purchase_price_clp,
-        # "rental_price_uf": rental_price_uf,
-        # "purchase_price_uf": purchase_price_uf,
-        "rental_prices_clp": rental_prices_clp,
-        # "purchase_prices_clp": purchase_prices_clp,
-        # "rental_prices_uf": rental_prices_uf,
-        # "purchase_prices_uf": purchase_prices_uf
+        "db": {
+            "rental_price_clp": rental_price_clp,
+            "purchase_price_clp": purchase_price_clp,
+            "rental_price_uf": rental_price_uf,
+            "purchase_price_uf": purchase_price_uf,
+            "rental_prices_clp": rental_prices_clp,
+            "purchase_prices_clp": purchase_prices_clp,
+            "rental_prices_uf": rental_prices_uf,
+            "purchase_prices_uf": purchase_prices_uf
+        }
     }
 
     with open("db.json", "w") as file:
