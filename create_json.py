@@ -12,7 +12,7 @@ def create_json():
     rental_prices_uf = []
     purchase_prices_uf = []
 
-    for i in range(100): # Assuming 5 values for simplicity
+    for i in range(30): # Assuming 5 values for simplicity
         x = int(random.normalvariate(100000, 5000 * (i%10))) # Mean: 100,000, Standard Deviation: 20,000 * (i+1)
         rental_prices_clp.append({"x": x})
         purchase_prices_clp.append({"x": x})
