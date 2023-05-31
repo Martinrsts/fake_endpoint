@@ -21,13 +21,13 @@ def create_json():
 
     data = {
         "rental_price_clp": rental_price_clp,
-        "purchase_price_clp": purchase_price_clp,
-        "rental_price_uf": rental_price_uf,
-        "purchase_price_uf": purchase_price_uf,
+        # "purchase_price_clp": purchase_price_clp,
+        # "rental_price_uf": rental_price_uf,
+        # "purchase_price_uf": purchase_price_uf,
         "rental_prices_clp": rental_prices_clp,
-        "purchase_prices_clp": purchase_prices_clp,
-        "rental_prices_uf": rental_prices_uf,
-        "purchase_prices_uf": purchase_prices_uf
+        # "purchase_prices_clp": purchase_prices_clp,
+        # "rental_prices_uf": rental_prices_uf,
+        # "purchase_prices_uf": purchase_prices_uf
     }
 
     with open("db.json", "w") as file:
